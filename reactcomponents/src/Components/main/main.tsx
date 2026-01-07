@@ -1,13 +1,13 @@
-import styles from "./main.module.scss";
+import Greeting from "../greeting/Greeting";
 
 export default function Main() {
   return (
-    <main className={styles.main}>
-      <p className={styles.content}>
-        Main content goes here
-      </p>
+    <main>
+      <Greeting
+        name="Mikkel"
+        age={24}
+        timeOfDay="morgen"
+      />
     </main>
   );
 }
-
-
